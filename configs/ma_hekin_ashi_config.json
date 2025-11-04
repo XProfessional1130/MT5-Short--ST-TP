@@ -1,6 +1,6 @@
 [
     {
-        "symbol": "BTCUSDT",
+        "symbol": "EURUSD",
         "strategies": [
             {
                 "name": "ma_heikin_ashi",

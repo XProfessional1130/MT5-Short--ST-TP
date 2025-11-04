@@ -51,7 +51,7 @@ if __name__ == "__main__":
                 trade_engine.log_income_history()
     elif args.mode == "test":
         start_time = time.time()
-        backtest_engine = BackTest(args.exch, args.sym_cfg_file, args.data_dir)
+        backtest_engine = BackTest(args.exch, args.sym_cfg_file, args.data_dir, args.exch_cfg_file)
         backtest_engine.start()
         backtest_engine.summary_trade_result()
         backtest_engine.stop()

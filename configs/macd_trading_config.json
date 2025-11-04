@@ -1,6 +1,6 @@
 [
     {
-        "symbol": "XAUUSDm",
+        "symbol": "EURUSD",
         "strategies": [
             {
                 "name": "macd_divergence",

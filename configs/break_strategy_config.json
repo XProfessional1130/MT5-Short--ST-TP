@@ -1,6 +1,6 @@
 [
     {
-        "symbol": "XAUUSDm",
+        "symbol": "EURUSD",
         "strategies": [
             {
                 "name": "break_strategy",
@@ -27,6 +27,6 @@
             4,
             5
         ],
-        "year": 2023
+        "year": 2025
     }
 ]

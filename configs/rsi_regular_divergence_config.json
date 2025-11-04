@@ -1,6 +1,6 @@
 [
     {
-        "symbol": "XAUUSDm",
+        "symbol": "EURUSD",
         "strategies": [
             {
                 "name": "rsi_regular_divergence",

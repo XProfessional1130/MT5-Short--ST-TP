@@ -1,6 +1,6 @@
 [
     {
-        "symbol": "XAUUSDm",
+        "symbol": "EURUSD",
         "strategies": [
             {
                 "name": "trend_following",

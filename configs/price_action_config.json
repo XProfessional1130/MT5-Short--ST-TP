@@ -1,6 +1,6 @@
 [
     {
-        "symbol": "GBPUSDm",
+        "symbol": "EURUSD",
         "strategies": [
             {
                 "name": "price_action",

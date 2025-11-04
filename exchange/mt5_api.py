@@ -33,6 +33,38 @@ class MT5API:
     def round_price(self, symbol, price):
         symbol_info = mt5.symbol_info(symbol)
         return round(price, symbol_info.digits)
+    
+    def get_filling_mode(self, symbol):
+        """Get the appropriate filling mode for a symbol based on broker support.
+        
+        Filling mode bitmask values:
+        - SYMBOL_FILLING_FOK = 1 (bit 0)
+        - SYMBOL_FILLING_IOC = 2 (bit 1)
+        - SYMBOL_FILLING_RETURN = 4 (bit 2)
+        """
+        symbol_info = mt5.symbol_info(symbol)
+        if symbol_info is None:
+            bot_logger.warning("[-] Cannot get symbol info for {}, using default FOK".format(symbol))
+            return mt5.ORDER_FILLING_FOK
+        
+        # Check which filling modes are supported
+        # filling_mode is a bitmask where:
+        # - Bit 0 (1) = FOK
+        # - Bit 1 (2) = IOC
+        # - Bit 2 (4) = RETURN
+        filling_mode = symbol_info.filling_mode
+        
+        # Try in order of preference: IOC, FOK, RETURN
+        if filling_mode & 2:  # SYMBOL_FILLING_IOC
+            return mt5.ORDER_FILLING_IOC
+        elif filling_mode & 1:  # SYMBOL_FILLING_FOK
+            return mt5.ORDER_FILLING_FOK
+        elif filling_mode & 4:  # SYMBOL_FILLING_RETURN
+            return mt5.ORDER_FILLING_RETURN
+        else:
+            # Default to FOK if unknown
+            bot_logger.warning("[-] Unknown filling mode for {}, using FOK".format(symbol))
+            return mt5.ORDER_FILLING_FOK
 
     def get_assets_balance(self, assets=["USD"]):
         assets = {}
