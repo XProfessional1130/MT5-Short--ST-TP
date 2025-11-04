@@ -14,7 +14,7 @@
                     "sl_fix_mode": "ADJ_SL"
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "max_sl_pct": 0.15,
                 "volume": 0.01
@@ -31,7 +31,7 @@
                     "sl_fix_mode": "ADJ_SL"
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "max_sl_pct": 0.15,
                 "volume": 0.01
@@ -59,7 +59,7 @@
                     "sl_fix_mode": "ADJ_SL"
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "max_sl_pct": 0.1,
                 "volume": 0.01
@@ -73,7 +73,7 @@
                     "sl_fix_mode": "ADJ_SL"
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "max_sl_pct": 0.1,
                 "volume": 0.01
@@ -90,7 +90,7 @@
                     "sl_fix_mode": "ADJ_SL"
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "max_sl_pct": 0.1,
                 "volume": 0.01
@@ -107,7 +107,7 @@
                     "sl_fix_mode": "ADJ_SL"
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "max_sl_pct": 0.1,
                 "volume": 0.01
@@ -130,7 +130,7 @@
                     "zz_type": "ZZ_DRC"
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "volume": 0.01,
                 "max_sl_pct": 0.15
@@ -154,7 +154,7 @@
                     "n_trend_point": 20
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "volume": 0.01,
                 "max_sl_pct": 0.15
@@ -171,7 +171,7 @@
                     "sl_fix_mode": "ADJ_ENTRY"
                 },
                 "tfs": {
-                    "tf": "1m"
+                    "tf": "15m"
                 },
                 "volume": 0.01,
                 "max_sl_pct": 0.15
