@@ -41,11 +41,11 @@ This repository contains a trading bot that utilizes the MetaTrader5 API for aut
   1. Edit all strategies's parameters in 'configs/symbols_trading_config.json' file.
   2. Start the trading bot in live mode by running the following command:
      ```bash
-     python main.py --mode live --exch mt5 --exch_cfg_file configs/exchange_config.json --sym_cfg_file configs/symbols_trading_config.json
+     python main.py --mode live --exch mt5 --exch_cfg_file configs/exchange_config.json --sym_cfg_file configs/scalping_high_frequency_config.json
 
   3. For backtesting a strategy, use the following command:
      ```bash
-     python main.py --mode test --exch mt5 --exch_cfg_file configs/exchange_config.json --sym_cfg_file <configs/break_strategy_config.json> --data_dir <path to historical candle data>
+     python main.py --mode test --exch mt5 --exch_cfg_file configs/exchange_config.json --sym_cfg_file configs/scalping_high_frequency_config.json --data_dir ./data
 
    Backtest result of each strategy will be output like this:
     ![Screenshot 1](debug/test.jpg)
