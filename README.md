@@ -26,7 +26,7 @@ This repository contains a trading bot that utilizes the MetaTrader5 API for aut
 ## Installation
   1. Clone the repository to your local machine:
      ```bash
-     git clone https://github.com/Zsunflower/MetaTrader5-auto-trading-bot
+     git clone https://github.com/XProfessional1130/MT5-Short-ST-TP
   2. Install the required dependencies:
      ```bash
      pip install -r requirements.txt
